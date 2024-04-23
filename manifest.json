@@ -1,16 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "Center Subtitles",
+    "name": "Center Captions",
     "version": "1.0",
     "description": "A Chrome extension to center subtitles on YouTube videos.",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*"
     ],
     "action": {        
         "default_icon": {
             "128": "icons/icon128.png"            
         }
-    },
+    },  
     "icons": {
         "16": "icons/icon16.png",
         "32": "icons/icon32.png",
